@@ -288,6 +288,53 @@ var book = new Book
     };
 
 ```
+<br>
+
+
+## 第9章 クラスを使いこなそう
+### 9-1 名前空間
+### 9-2 Stringクラスを使ってみる
+### 9-3 Mathクラスを使ってみる
+### 9-4 DateTime構造体を使ってみる
+### 9-5 Fileクラスを使ってみる
+
+| クラス | 使用法 | 説明 
+|--|--|--
+| String | var length = str.Length; | 文字数を取得
+| 〃 | var sub1 = str1.Substring(0,6);<br>var sub2 = str1.Substring(6,2);<br>_ | 開始位置0から6文字分を取り出して返却する<br>開始位置6から2文字分を取り出して返却する<br>※オリジナルの文字列は変更されない
+| 〃 | var str2 = str1.Trim(); | 文字列の前後の空白を除去する却する<br>※オリジナルの文字列は変更されない
+| 〃 | var str2 = str1.ToUpper(); | 文字列内の英字をすべて<u>大文字</u>にする
+| 〃 | var str2 = str1.ToLower(); | 文字列内の英字をすべて<u>小文字</u>にする
+| 〃 | var str2 = str1.Replace("static", "静的"); | 指定した別の文字列に置き換える
+| 〃 | if ( str.Contains("static") ) { ... } | 指定の文字列が存在するか調べる
+| 〃 | string[] items = str1.Split( ',' ); | 指定した文字で、文字列を分割する
+|  |  | 
+| Math | var abs1 = Math.Abs( 150 );<br>var abs2 = Math.Abs( -320 ); | 結果：150<br>結果：320
+| 〃 | var abs3 = Math.Abs( -5.67M );<br>var abs4 = Math.Abs( -1.414 ); | 結果：5.67　※decimal型<br>結果：1.414  ※double型
+| 〃 | var big = Math.Max( 340, 500 ); | 結果：500 ※2つの数値のうち<u>大きいほう</u>を取得する
+| 〃 | var small = Math.Min( 340, 500 ); | 結果：340 ※2つの数値のうち<u>小さいほう</u>を取得する
+| 〃 | double num = Math.Floor( 3.7 ); | 結果：3 ※小数点以下を切り<u>捨て</u>
+| 〃 | double num = Math.Ceiling( 3.7 ); | 結果：4 ※小数点以下を切り<u>上げ</u>
+| 〃 | Math.Round | `...いったん飛ばし...`
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  |  
+
+
+
+
 
 
 
@@ -331,3 +378,4 @@ var book = new Book
 |  | 
 |  | 
 |  | 
+
